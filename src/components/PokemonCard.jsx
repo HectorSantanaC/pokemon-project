@@ -1,13 +1,7 @@
-import { useEffect, useState } from "react";
+import "./PokemonCard.css"
 
-function PokemonCard() {
-  const [pokemon, setPokemon] = useState({});
-
-  useEffect(() => {
-    fetch("https://pokeapi.co/api/v2/pokemon/1")
-      .then((response) => response.json())
-      .then((data) => setPokemon(data));
-  }, []);
+function PokemonCard(props) {
+  const { pokemon } = props;
 
   return pokemon.id ? (
     <li className="pokemon-card">
