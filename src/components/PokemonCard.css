@@ -9,6 +9,8 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  cursor: pointer;
+
 
   .text {
     margin: 0;
@@ -17,4 +19,8 @@
   .pokemon-img {
     width: 100%;
   }
+}
+
+.pokemon-card:hover {
+  background-color: orange;
 }
